@@ -1,4 +1,4 @@
-# Chatbot Assistant for Product Information Retrieval
+# Chatbot Assistant
 
 ## Overview
 This project is a chatbot assistant designed to provide accurate and relevant information about aquarium products using NLP techniques, Python, and TensorFlow.

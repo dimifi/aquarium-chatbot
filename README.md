@@ -16,6 +16,7 @@ This project is a chatbot assistant designed to provide accurate and relevant in
 - JSON
 
 ## System Architecture
+```
 +--------------+
 |  User Input  |
 +--------------+
@@ -45,9 +46,9 @@ This project is a chatbot assistant designed to provide accurate and relevant in
 |   Output     |
 +--------------+
 
-
+```
 ## Setup
-- The used model is the Phi3-mini
+- The used model is the Phi3-mini/ More information on the model can be found here: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
 - Make sure you installed the required libraries
 - The chatbot script is called aquarium_chatbot_assistant: https://github.com/dimifi/aquarium-chatbot/blob/main/aquarium_chatbot_assistant.py
 - The data file the chatbot uses to retrieve data is called product_listings_data: https://github.com/dimifi/aquarium-chatbot/blob/main/product_listings_data.json

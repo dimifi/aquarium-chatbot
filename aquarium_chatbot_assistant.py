@@ -1,3 +1,4 @@
+import os
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import json
@@ -19,9 +20,14 @@ tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-128k-instruct")
 # Text generation pipeline with the loaded model and tokenizer
 pipe = pipeline("text-generation", model=model, tokenizer=tokenizer)
 
+# Path to the JSON file relative to the script's directory
+script_dir = os.path.dirname(__file__)
+data_file_path = os.path.join(script_dir, 'product_listings_data.json')
+
 # Load JSON data
-with open('C:/Users/dimfi/Desktop/Chat2/Apple/data.json', 'r', encoding='utf-8') as file:
+with open(data_file_path, 'r', encoding='utf-8') as file:
     product_info = json.load(file)
+
 
 
 # Context for product based queries
